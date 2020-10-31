@@ -10,14 +10,25 @@ import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import SearchOptions from './Components/SearchOptions';
+import Main from './Components/Main';
+import SearchPage from './Components/SearchPage';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
-        <SearchOptions />
-        <Footer />
+        <Switch>
+        <Route path="/1">
+          <Main />
+        </Route>
+
+        <Route path="/search">
+          <SearchPage />
+        </Route>
+        {/* <Route path="/2">
+          <NewMain />
+        </Route> */}
+      </Switch>
       </Router>
     </div>
   );

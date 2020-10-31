@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-class Label extends Component {
+class SearchListing extends Component {
   render() {
     return (
       <div>
         { this.props.isOdd ? 
-          <div className="d-flex justify-content-between label odd">
+          <div className="d-flex justify-content-between search-listing odd">
             <div className="ml-3">
               {this.props.label}
             </div>
@@ -19,7 +19,7 @@ class Label extends Component {
             </div>
           </div>
           :
-          <div className="d-flex justify-content-between label even">
+          <div className="d-flex justify-content-between search-listing even">
             <div className="ml-3">
               {this.props.label}
             </div>
@@ -36,4 +36,4 @@ class Label extends Component {
   }
 }
 
-export default Label
+export default SearchListing

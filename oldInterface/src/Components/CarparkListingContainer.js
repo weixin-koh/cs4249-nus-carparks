@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import SearchListing from './SearchListing'
 
-class SearchContainer extends Component {
+class CarparkListingContainer extends Component {
     render() {
         return (
             <div className="labelContainer">
@@ -10,4 +10,4 @@ class SearchContainer extends Component {
         )
     }
 }
-export default SearchContainer
+export default CarparkListingContainer

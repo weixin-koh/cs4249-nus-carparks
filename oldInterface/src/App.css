@@ -37,20 +37,37 @@
   }
 }
 
-.label {
+.search-listing {
   width: 100%;
   padding: 10px 0;
 }
 
-.label.even {
+.search-listing.even {
   background-color: #DFDADF;
 }
 
-.label.odd {
+.search-listing.odd {
   background-color: #FFF;
 }
 
-.label>p {
+.search-listing>p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.carpark-listing {
+  width: 100%;
+}
+
+.carpark-listing.even {
+  background-color: #DFDADF;
+}
+
+.carpark-listing.odd {
+  background-color: #FFF;
+}
+
+.carpark-listing>p {
   font-size: 1.5em;
   margin: 0;
 }

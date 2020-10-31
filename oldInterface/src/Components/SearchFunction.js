@@ -20,20 +20,17 @@ class SearchFunction extends Component {
   render() {
     return (
       <div style={{ background: "#E5E5E5", alignContent: 'center' }}>
-        <div className="row" style={{ padding: 5 }}>
-            <div>
-                <div className="input-group">
-                    <span className="input-group-prepend" style={{ background: "#FFF" }}>
-                        <div className="input-group-text bg-transparent border-right-0">
-                            {/* <i className="fa fa-search"></i> */}
-                            <FontAwesomeIcon icon={faSearch} />
-                        </div>
-                    </span>
-                    <input className="form-control py-2 border-left-0 border" type="search" id="example-search-input" value={this.state.searchTerm} onChange={this.editSearchTerm} placeholder='Search' />
-                </div>
-            </div>
+        <div className="row" style={{ padding: 5, margin: 0, width: '100%' }}>
+          <div className="input-group">
+            <span className="input-group-prepend" style={{ background: "#FFF" }}>
+              <div className="input-group-text bg-transparent border-right-0">
+                {/* <i className="fa fa-search"></i> */}
+                <FontAwesomeIcon icon={faSearch} />
+              </div>
+            </span>
+            <input className="form-control py-2 border-left-0 border" type="search" id="example-search-input" value={this.state.searchTerm} onChange={this.editSearchTerm} placeholder='Search' />
+          </div>
         </div>
-        <br></br>
         <SearchContainer labels = {this.dynamicSearch()}/>
       </div>
     );

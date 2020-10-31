@@ -8,7 +8,7 @@ class SearchPage extends React.Component {
   render () {
     return (
       <div className="App">
-        <Header />
+        <Header navBack={true} />
         <SearchFunction />
       </div>
     );

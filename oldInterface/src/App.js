@@ -8,20 +8,19 @@ import {
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './Components/Header';
-import Search from './Components/Search';
+import Footer from './Components/Footer';
+import SearchOptions from './Components/SearchOptions';
 
-
-class App extends React.Component {
-  render () {
-    return (
-      <div className="App">
-        <Router>
-          <Header />
-          <Search />
-        </Router>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Header />
+        <SearchOptions />
+        <Footer />
+      </Router>
+    </div>
+  );
 }
 
 export default App;

@@ -1,0 +1,62 @@
+.header {
+  background-color: #f95b03;
+}
+
+.header-app-name {
+  font-weight: bold;
+  color: white;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 10px 0px;
+}
+
+.header-button {
+  background: linear-gradient(to bottom, #b2e5fe 0%, #33a9ed 100%);
+}
+
+.fa {
+  color: white;
+}
+
+.search-option-button {
+  background-color: #3e59cb;
+  margin: 4px;
+}
+
+.selected-search-display {
+  color: white;
+  background-color: #266cb2;
+  padding: 0px 10px;
+}
+
+.selected-search-redo {
+  color: #f95b03;
+  background-color: #266cb2;
+}
+
+.selected-search-location {
+  text-align: left;
+  padding: 0px 10px;
+  color: white;
+  background-color: #dc545d;
+}
+
+.footer-button-light {
+  background-color: #889dea;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-button-medium {
+  background-color: #6885e9;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-button-dark {
+  background-color: #3e59cb;
+  color: white;
+  font-weight: bold;
+}

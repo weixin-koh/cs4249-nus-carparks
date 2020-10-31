@@ -1,36 +1,31 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faInfo, faCar } from '@fortawesome/free-solid-svg-icons'
+import { faInfo, faCar } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom"
-import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Main.css';
 
 class Header extends React.Component {
     render() {
         return (
-            <header>
-                <Button>
-                    <Link to="/about">
-                        <FontAwesomeIcon icon={faArrowLeft}/>
-                    </Link>
-                </Button>
+            <div class="position-relative">
+                <div class="header-app-name ml-auto position-absolute">
+                        NUS Carparks
+                </div>
+                <div class="header d-flex flex-row-reverse width-100 p-1">
+                    <div>
+                        <div 
+                            class="btn btn-primary fa header-button"
+                            onClick={() => window.open("https://uci.nus.edu.sg/oca/")}>
+                            <FontAwesomeIcon icon={faInfo}/>
+                        </div>
 
-                <span>
-                    NUS Carparks
-                </span>
-
-                <Button>
-                    <FontAwesomeIcon
-                        icon={faInfo}
-                        onClick={() => window.open("https://uci.nus.edu.sg/oca/")}
-                    />
-                </Button>
-
-                <Button>
-                    <Link to="/about">
-                        <FontAwesomeIcon icon={faCar}/>
-                    </Link>
-                </Button>
-            </header>
+                        <Link to="/about" class="btn btn-primary fa ml-2 mr-2 header-button">
+                            <FontAwesomeIcon icon={faCar}/>
+                        </Link>
+                    </div>
+                </div>
+            </div>
         )
     }
 }

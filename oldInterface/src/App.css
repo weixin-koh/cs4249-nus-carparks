@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.label {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.label.even {
+  background-color: #DFDADF;
+}
+
+.label.odd {
+  background-color: #FFF;
+}
+
+.label>p {
+  font-size: 1.5em;
+  margin: 0;
+}

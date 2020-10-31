@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.search-listing {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.search-listing.even {
+  background-color: #DFDADF;
+}
+
+.search-listing.odd {
+  background-color: #FFF;
+}
+
+.search-listing>p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.carpark-listing {
+  width: 100%;
+}
+
+.carpark-listing.even {
+  background-color: #DFDADF;
+}
+
+.carpark-listing.odd {
+  background-color: #FFF;
+}
+
+.carpark-listing>p {
+  font-size: 1.5em;
+  margin: 0;
+}

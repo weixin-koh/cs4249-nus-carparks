@@ -14,11 +14,9 @@ class Header extends React.Component {
                 </div>
                 <div class="header d-flex flex-row-reverse width-100 p-1">
                     <div>
-                        <div 
-                            class="btn btn-primary fa header-button"
-                            onClick={() => window.open("https://uci.nus.edu.sg/oca/")}>
+                        <Link to="/NUSSite/nusMain.html" class="btn btn-primary fa ml-2 mr-2 header-button">
                             <FontAwesomeIcon icon={faInfo}/>
-                        </div>
+                        </Link>
 
                         <Link to="/about" class="btn btn-primary fa ml-2 mr-2 header-button">
                             <FontAwesomeIcon icon={faCar}/>

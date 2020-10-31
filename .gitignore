@@ -1,23 +1,45 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+/oldInterface/node_modules
+/oldInterface/.pnp
+/oldInterface/.pnp.js
 
 # testing
-/coverage
+/oldInterface/coverage
 
 # production
-/build
+/oldInterface/build
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+/oldInterface/.DS_Store
+/oldInterface/.env.local
+/oldInterface/.env.development.local
+/oldInterface/.env.test.local
+/oldInterface/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/oldInterface/npm-debug.log*
+/oldInterface/yarn-debug.log*
+/oldInterface/yarn-error.log*
+
+# dependencies
+/newInterface/node_modules
+/newInterface/.pnp
+/newInterface/.pnp.js
+
+# testing
+/newInterface/coverage
+
+# production
+/newInterface/build
+
+# misc
+/newInterface/.DS_Store
+/newInterface/.env.local
+/newInterface/.env.development.local
+/newInterface/.env.test.local
+/newInterface/.env.production.local
+
+/newInterface/npm-debug.log*
+/newInterface/yarn-debug.log*
+/newInterface/yarn-error.log*

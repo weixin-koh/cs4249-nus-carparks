@@ -1,10 +1,4 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Main.css';
 import Header from './Header';
@@ -13,24 +7,31 @@ import SearchOptions from './SearchOptions';
 import CarparkListingContainer from './CarparkListingContainer';
 
 class Main extends React.Component {
-  state = { criteria: "nearest"}
+  constructor(props) {
+    super(props);
+    this.updateListingRef = React.createRef();
+    this.state = { criteria: "com1"};
+  }
+
+  // Trigger display of carpark listing through ref
   startNewSearch = (criteria) => {
     this.setState({criteria})
+    this.updateListingRef.current.handleSort(criteria);
   };
 
   render () {
     return (
-      <div className="App">
-        <header className="sticky-top white-background">
+      <div className="d-flex flex-column">
+        <div className="sticky-top white-background">
           <Header />
           <SearchOptions startNewSearch = {this.startNewSearch}/>
-        </header>
-        <body>
-          <CarparkListingContainer criteria = {this.state.criteria}/>
-        </body>
-        <footer>
+        </div>
+        <div>
+          <CarparkListingContainer ref={this.updateListingRef}/>
+        </div>
+        <div>
           <Footer />
-        </footer>
+        </div>
       </div>
     );
   }

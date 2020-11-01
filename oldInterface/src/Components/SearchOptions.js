@@ -12,7 +12,8 @@ class SearchOptions extends React.Component {
             <div>
                 <div className="d-flex justify-content-between">
                     <div className="btn btn-primary fa search-option-button flex-fill" 
-                        onClick={() => this.props.startNewSearch("nearest")}>
+                        // Default "Nearest" to COM1
+                        onClick={() => this.props.startNewSearch("com1")}>
                         <FontAwesomeIcon icon={faSortAmountUp}/> NEAREST
                     </div>
 

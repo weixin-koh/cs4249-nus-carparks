@@ -20,10 +20,6 @@
   background-color: white;
 }
 
-body {
-  padding: 0px 0px 20px 0px;
-}
-
 .fa {
   color: white;
 }
@@ -54,6 +50,12 @@ body {
   padding: 0px 10px;
   color: white;
   background-color: #dc545d;
+}
+
+.main-body {
+  min-height: 400px;
+  margin-bottom: 40px;
+  clear: both;
 }
 
 .footer-button {

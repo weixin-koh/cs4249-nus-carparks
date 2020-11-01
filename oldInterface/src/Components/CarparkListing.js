@@ -4,13 +4,6 @@ import './CarparkListing.css'
 
 class CarparkListing extends Component {
   render() {
-    const isOdd = this.props.isOdd;
-    const id = this.props.id;
-    const location = this.props.location;
-    const lotType = this.props.lotType;
-    const availLots = this.props.availLots;
-    const dist = this.props.dist;
-
     return (
       <div>
         { this.props.isOdd ? 
@@ -18,7 +11,7 @@ class CarparkListing extends Component {
               <div className="w-75">
                 <div>
                   <span className="id">{this.props.id}</span>
-                  <span className="lot-type">{this.props.lotType!="Visitor"? " (" + this.props.lotType + ")" : " "}</span>
+                  <span className="lot-type">{this.props.lotType!=="Visitor"? " (" + this.props.lotType + ")" : " "}</span>
                 </div>
                 <div className="location">{this.props.location}</div>
                 <div className="distance">Distance: {this.props.distance}m</div>

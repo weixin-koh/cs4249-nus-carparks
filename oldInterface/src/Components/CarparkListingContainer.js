@@ -4,31 +4,32 @@ import {carparkData} from '../Data/Carparks'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class CarparkListingContainer extends Component {
-    state = { criteria: "nearest"}
+    constructor(props) {
+        super(props);
+        this.state = { criteria: "nearest ", sortedData: carparkData };
+        this.handleSort = this.handleSort.bind(this);
+    }
 
-    
-    // renderSort = (criteria) => () => {
-    //     const [data, setData] = useState([]);
-
-    //     const sortData = criteria => {
-    //         const sortBy = {
-    //             com: 'distFromCOM1',
-    //             fass: 'distFromFASS',
-    //             utown: 'distFromUTOWN',
-    //             lots: 'lots',
-    //         };
-    //         const sortProperty = sortBy[criteria];
-    //         const sorted = carparkData.sort((a,b) => b[sortProperty] - a[sortProperty]);
-    //         console.log(sorted);
-    //         setData(sorted);
-    //     }
-    // }
+    handleSort(newCriteria) {
+        this.setState({criteria: newCriteria});
+        
+        // Determine to sort in ascending/descending order (shortest distance/most lots)
+        switch(newCriteria) {
+            case "lots":
+                this.state.sortedData = carparkData.sort((a,b) => parseInt(b.availLots) - parseInt(a.availLots));
+                break;
+            default:
+                this.state.sortedData = carparkData.sort((a,b) => parseFloat(a.distFromCOM1) - parseFloat(b.distFromCOM1));
+                break;
+        }
+    }
 
     render() {
         var isOdd = false;
-        // this.renderSort().sortData(this.props.criteria);
-        
-
+        if (this.props.criteria != this.state.criteria) {
+            this.handleSort(this.props.criteria);
+            console.log(this.state.sortedData);
+        }
 
         // switch(this.props.selectedLocation) {
         //     case "COM1":
@@ -41,12 +42,9 @@ class CarparkListingContainer extends Component {
         //         distFrom = distFromUTOWN;
         // }
 
-        
-
         return (
             <div>
-                <div><newSort /></div>
-                {carparkData.map(carpark => {
+                {this.state.sortedData.map(carpark => {
                     return(<CarparkListing 
                         isOdd = {isOdd=!isOdd}
                         id = {carpark.id}
@@ -54,14 +52,8 @@ class CarparkListingContainer extends Component {
                         lotType = {carpark.lotType}
                         availLots = {carpark.availLots}                        
                         distance = {carpark.distFromCOM1}
-                    />);})}
-
-                    
+                    />);})}  
             </div>
-            // <div><CarparkListing isOdd = {index % 2}/></div>
-            // <div className="labelContainer">
-            //   {this.props.labels.map((label, index) => <CarparkListing label = {label} isOdd = {index % 2} />)}
-            // </div>
         )
     }
 }

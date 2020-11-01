@@ -44,7 +44,7 @@ body {
 }
 
 .selected-search-redo {
-  color: #f95b03;
+  color: #f95b03 !important;
   background-color: #266cb2;
   font-size: x-large;
 }

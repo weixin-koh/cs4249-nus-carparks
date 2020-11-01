@@ -18,9 +18,9 @@ class SelectedSearchOption extends React.Component {
         if (!isNearest) {
             return (
                 <div>
-                    <div class="d-flex justify-content-between selected-search-display">
-                        <div class="align-self-center">Most Available Lots</div>
-                        <Link to="/about" class="btn btn-primary selected-search-redo">
+                    <div className="d-flex justify-content-between selected-search-display">
+                        <div className="align-self-center">Most Available Lots</div>
+                        <Link to="/about" className="btn btn-primary selected-search-redo">
                             <FontAwesomeIcon icon={faRedo}/>
                         </Link>
                     </div>
@@ -29,13 +29,13 @@ class SelectedSearchOption extends React.Component {
         } 
         return (
             <div>
-                <div class="d-flex justify-content-between selected-search-display">
-                    <div class="align-self-center">Nearest Car Parks</div>
-                    <Link to="/about" class="btn btn-primary selected-search-redo">
+                <div className="d-flex justify-content-between selected-search-display">
+                    <div className="align-self-center">Nearest Car Parks</div>
+                    <Link to="/about" className="btn btn-primary selected-search-redo">
                         <FontAwesomeIcon icon={faRedo}/>
                     </Link>
                 </div>
-                <div class="selected-search-location">
+                <div className="selected-search-location">
                     From {location}
                 </div>
             </div>

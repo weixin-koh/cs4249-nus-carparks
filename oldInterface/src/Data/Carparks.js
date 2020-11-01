@@ -2,7 +2,7 @@ export const carparkData = [
     {
       id: "CP14",
       location: "Shaw Foundation Building (AS7), Faculty of Arts & Social Science",
-      lotType: "staff",
+      lotType: "Staff only",
       availLots: "115",
       distFromCOM1: "342.58",
       distFromFASS: "68.43",
@@ -12,7 +12,7 @@ export const carparkData = [
     {
       id: "CP16",
       location: "Faculty of Arts & Social Science (LT11/AS2)",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "10",
       distFromCOM1: "330.63",
       distFromFASS: "116.55",
@@ -22,7 +22,7 @@ export const carparkData = [
     {
       id: "CP1/CP2/CP2A/CP2B",
       location: "School of Design/Faculty of Engineering",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "258",
       distFromCOM1: "349.72",
       distFromFASS: "221.83",
@@ -32,7 +32,7 @@ export const carparkData = [
     {
       id: "CP18",
       location: "AS8",
-      lotType: "staff",
+      lotType: "Staff only",
       availLots: "19",
       distFromCOM1: "239.57",
       distFromFASS: "221.29",
@@ -42,7 +42,7 @@ export const carparkData = [
     {
       id: "StephenRiadyCentre",
       location: "University Town (SRC)",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "303",
       distFromCOM1: "1130.39",
       distFromFASS: "1164.06",
@@ -52,7 +52,7 @@ export const carparkData = [
     {
       id: "CP15",
       location: "Opposite NUSS/SFAH, Temasek Hall, Eusoff Hall & Venus",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "392",
       distFromCOM1: "249.80",
       distFromFASS: "203.21",
@@ -62,7 +62,7 @@ export const carparkData = [
     {
       id: "CP17",
       location: "NUS IT",
-      lotType: "staff",
+      lotType: "Staff only",
       availLots: "24",
       distFromCOM1: "279.08",
       distFromFASS: "329.61",
@@ -72,7 +72,7 @@ export const carparkData = [
     {
       id: "CP2C",
       location: "DSI",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "40",
       distFromCOM1: "482.22",
       distFromFASS: "539.03",
@@ -82,7 +82,7 @@ export const carparkData = [
     {
       id: "CP13",
       location: "COM1, School of Computing",
-      lotType: "staff",
+      lotType: "Staff only",
       availLots: "97",
       distFromCOM1: "151.84",
       distFromFASS: "191.81",
@@ -92,7 +92,7 @@ export const carparkData = [
     {
       id: "CP3",
       location: "University Cultural Centre/Yong Siew Toh Conservatory",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "182",
       distFromCOM1: "808.52",
       distFromFASS: "894.14",
@@ -102,7 +102,7 @@ export const carparkData = [
     {
       id: "CP3A",
       location: "Lee Kong Chian Natural History Museum",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "4",
       distFromCOM1: "781.28",
       distFromFASS: "871.26",
@@ -112,7 +112,7 @@ export const carparkData = [
     {
       id: "CREATETower",
       location: "CREATE",
-      lotType: "NRF staff and visitors",
+      lotType: "NRF Staff and Visitors",
       availLots: "129",
       distFromCOM1: "979.44",
       distFromFASS: "1062.57",
@@ -122,7 +122,7 @@ export const carparkData = [
     {
       id: "U-Town",
       location: "University Town (College Avenue East and West)",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "28",
       distFromCOM1: "915.63",
       distFromFASS: "1023.70",
@@ -132,7 +132,7 @@ export const carparkData = [
     {
       id: "CP5",
       location: "Sports & Recreation Centre",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "134",
       distFromCOM1: "644.57",
       distFromFASS: "789.42",
@@ -142,7 +142,7 @@ export const carparkData = [
     {
       id: "CP4",
       location: "Raffles Hall",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "92",
       distFromCOM1: "564.97",
       distFromFASS: "723.41",
@@ -152,7 +152,7 @@ export const carparkData = [
     {
       id: "CP12",
       location: "Hon Sui Sen Memorial Library, School of Business",
-      lotType: "staff",
+      lotType: "Staff only",
       availLots: "17",
       distFromCOM1: "273.49",
       distFromFASS: "467.74",
@@ -162,7 +162,7 @@ export const carparkData = [
     {
       id: "CP11",
       location: "School of Business",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "39",
       distFromCOM1: "218.63",
       distFromFASS: "500.97",
@@ -172,7 +172,7 @@ export const carparkData = [
     {
       id: "CP5B",
       location: "NUS Staff Club",
-      lotType: "staff",
+      lotType: "Staff only",
       availLots: "25",
       distFromCOM1: "488.82",
       distFromFASS: "701.73",
@@ -182,7 +182,7 @@ export const carparkData = [
     {
       id: "CP11B",
       location: "Innovation 4.0",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "49",
       distFromCOM1: "264.78",
       distFromFASS: "558.73",
@@ -192,7 +192,7 @@ export const carparkData = [
     {
       id: "CP12B",
       location: "I-Cube",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "74",
       distFromCOM1: "435.03",
       distFromFASS: "652.78",
@@ -202,7 +202,7 @@ export const carparkData = [
     {
       id: "CP11C",
       location: "TCOMS",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "6",
       distFromCOM1: "388.66",
       distFromFASS: "682.97",
@@ -212,7 +212,7 @@ export const carparkData = [
     {
       id: "CP6B",
       location: "University Hall",
-      lotType: "staff and authorised visitors",
+      lotType: "Staff and Authorised Visitors only",
       availLots: "113",
       distFromCOM1: "493.99",
       distFromFASS: "788.77",
@@ -222,7 +222,7 @@ export const carparkData = [
     {
       id: "CP6A",
       location: "S1A, Faculty of Science",
-      lotType: "staff",
+      lotType: "Staff only",
       availLots: "0",
       distFromCOM1: "559.44",
       distFromFASS: "869.11",
@@ -232,7 +232,7 @@ export const carparkData = [
     {
       id: "CP6",
       location: "S7 & S13, Faculty of Science",
-      lotType: "staff",
+      lotType: "Staff",
       availLots: "15",
       distFromCOM1: "623.14",
       distFromFASS: "935.88",
@@ -242,7 +242,7 @@ export const carparkData = [
     {
       id: "CP7",
       location: "S10 & S14, Faculty of Science",
-      lotType: "staff",
+      lotType: "Staff only",
       availLots: "15",
       distFromCOM1: "733.33",
       distFromFASS: "1044.97",
@@ -252,7 +252,7 @@ export const carparkData = [
     {
       id: "CP10B",
       location: "PGP Residences",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "0",
       distFromCOM1: "812.76",
       distFromFASS: "1090.56",
@@ -262,7 +262,7 @@ export const carparkData = [
     {
       id: "CP8",
       location: "S16, Faculty of Science",
-      lotType: "staff",
+      lotType: "Staff only",
       availLots: "15",
       distFromCOM1: "832.15",
       distFromFASS: "1144.54",
@@ -272,7 +272,7 @@ export const carparkData = [
     {
       id: "CP10C",
       location: "Centre for Life Sciences",
-      lotType: "staff",
+      lotType: "Staff",
       availLots: "19",
       distFromCOM1: "822.03",
       distFromFASS: "1135.20",
@@ -282,7 +282,7 @@ export const carparkData = [
     {
       id: "CP10S",
       location: "S17, Faculty of Science",
-      lotType: "staff and authorised season holders",
+      lotType: "Staff and Authorised Season Holders",
       availLots: "159",
       distFromCOM1: "920.42",
       distFromFASS: "1233.95",
@@ -292,7 +292,7 @@ export const carparkData = [
     {
       id: "CP10A",
       location: "CRISPS",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "12",
       distFromCOM1: "932.59",
       distFromFASS: "1224.05",
@@ -302,7 +302,7 @@ export const carparkData = [
     {
       id: "CP9A",
       location: "MD11, Yong Loo Lin School of Medicine",
-      lotType: "staff",
+      lotType: "Staff only",
       availLots: "17",
       distFromCOM1: "942.47",
       distFromFASS: "1259.49",
@@ -312,7 +312,7 @@ export const carparkData = [
     {
       id: "CP10V",
       location: "S17, Faculty of Science",
-      lotType: "visitor",
+      lotType: "Visitor",
       availLots: "18",
       distFromCOM1: "982.47",
       distFromFASS: "1298.12",

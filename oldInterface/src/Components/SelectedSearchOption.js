@@ -5,13 +5,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './../Style/Main.css';
 
 class SelectedSearchOption extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
             isNearest: (this.props.criteria !== "lots"),
             location: this.props.criteria
         };
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.criteria !== this.props.criteria) {
+            this.setState({ isNearest: (this.props.criteria !== 'lots') });
+        }
     }
 
     render() {

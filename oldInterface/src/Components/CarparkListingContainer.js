@@ -16,6 +16,12 @@ class CarparkListingContainer extends Component {
         this.handleSort(this.props.criteria);
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.criteria !== this.props.criteria) {
+            this.handleSort(this.props.criteria);
+        }
+    }
+
     handleSort = (criteria) => {
         // Determine to sort in ascending/descending order (shortest distance/most lots)
         switch (criteria) {

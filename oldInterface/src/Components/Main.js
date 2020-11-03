@@ -1,37 +1,55 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../Style/Main.css';
+import './../Style/SearchListing.css';
 import Header from './Header';
 import Footer from './Footer';
 import SearchOptions from './SearchOptions';
 import CarparkListingContainer from './CarparkListingContainer';
+import SearchContainer from './SearchContainer';
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.updateListingRef = React.createRef();
-    this.state = { criteria: "com1"};
+    this.state = {
+      criteria: "",
+      showSearchPage: false
+    };
   }
 
-  // Trigger display of carpark listing through ref
+  toggleSearchDisplay = () => {
+    const showSearchPage = this.state.showSearchPage;
+    this.setState({ showSearchPage: !showSearchPage });
+  }
+
+  // Update search criteria
   startNewSearch = (criteria) => {
-    this.setState({criteria})
-    this.updateListingRef.current.handleSort(criteria);
+    this.setState({ criteria, showSearchPage: false });
   };
 
-  render () {
+  render() {
+    const showSearchPage = this.state.showSearchPage;
+
     return (
       <div className="d-flex flex-column">
-        <div className="sticky-top white-background">
-          <Header />
-          <SearchOptions startNewSearch = {this.startNewSearch}/>
-        </div>
-        <div>
-          <CarparkListingContainer ref={this.updateListingRef}/>
-        </div>
-        <div>
-          <Footer />
-        </div>
+        { showSearchPage ?
+          <div>
+            <div className="sticky-top">
+              <Header navBack={true} props={this.props} toggleSearchDisplay={this.toggleSearchDisplay} />
+            </div>
+            <SearchContainer props={this.props} updateSearchCallback={(location) => this.startNewSearch(location)} />
+          </div>
+          :
+          <div>
+            <div className="sticky-top white-background">
+              <Header />
+              <SearchOptions startNewSearch={this.startNewSearch} toggleSearchDisplay={this.toggleSearchDisplay} criteria={this.state.criteria} />
+            </div>
+            <CarparkListingContainer criteria={this.state.criteria.toLowerCase()} />
+            <Footer />
+          </div>
+        }
       </div>
     );
   }

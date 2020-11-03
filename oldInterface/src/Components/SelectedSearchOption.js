@@ -8,30 +8,38 @@ class SelectedSearchOption extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {isNearest: true, location: "Current Location"};
+        this.state = {
+            isNearest: (this.props.criteria !== "lots"),
+            location: this.props.criteria
+        };
     }
 
     render() {
         const isNearest = this.state.isNearest;
-        const location = this.state.location;
+        var location = this.state.location;
+
+        if (this.state.location === "") {
+            location = "Current Location";
+        }
+
         if (!isNearest) {
             return (
                 <div>
                     <div className="d-flex justify-content-between selected-search-display">
                         <div className="align-self-center">Most Available Lots</div>
                         <div className="btn btn-primary selected-search-redo">
-                            <FontAwesomeIcon icon={faRedo}/>
+                            <FontAwesomeIcon icon={faRedo} />
                         </div>
                     </div>
                 </div>
             )
-        } 
+        }
         return (
             <div>
                 <div className="d-flex justify-content-between selected-search-display">
                     <div className="align-self-center">Nearest Car Parks</div>
                     <div className="btn btn-primary selected-search-redo">
-                        <FontAwesomeIcon icon={faRedo}/>
+                        <FontAwesomeIcon icon={faRedo} />
                     </div>
                 </div>
                 <div className="selected-search-location">

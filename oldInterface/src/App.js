@@ -1,29 +1,21 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  Router,
   Switch,
   Route,
 } from "react-router-dom";
+import history from './history';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './Style/App.css';
 import Main from './Components/Main';
-import SearchPage from './Components/SearchPage';
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router history={history}>
         <Switch>
-          <Route path="/1">
-            <Main />
-          </Route>
-
-          <Route path="/search">
-            <SearchPage />
-          </Route>
-          {/* <Route path="/2">
-            <NewMain />
-          </Route> */}
+          <Route path="/1" component={Main} />
+          {/* <Route path="/2" component={NewMain} /> */}
         </Switch>
       </Router>
     </div>

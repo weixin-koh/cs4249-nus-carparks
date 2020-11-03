@@ -1,3 +1,20 @@
+.carpark-listing {
+  width: 100%;
+}
+
+.carpark-listing.even {
+  background-color: #DFDADF;
+}
+
+.carpark-listing.odd {
+  background-color: #FFF;
+}
+
+.carpark-listing>p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
 .id {
   color: #3600f3;
   font-size: large;
@@ -33,13 +50,22 @@
   text-align: center;
 }
 
-.odd {
+.carpark-listing {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.carpark-listing .w-75 {
+  text-align: left;
+}
+
+.carpark-listing .odd {
   background-color: #dfdadf;
   padding: 0px 0px 20px 0px;
   text-align: left;
 }
 
-.even {
+.carpark-listing .even {
   background-color: white;
   padding: 0px 0px 20px 0px;
   text-align: left;

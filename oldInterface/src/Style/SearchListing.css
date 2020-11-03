@@ -1,0 +1,17 @@
+.search-listing {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.search-listing.even {
+  background-color: #DFDADF;
+}
+
+.search-listing.odd {
+  background-color: #FFF;
+}
+
+.search-listing>p {
+  font-size: 1.5em;
+  margin: 0;
+}

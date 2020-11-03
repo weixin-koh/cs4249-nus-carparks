@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import history from './../history';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { Main } from './Main';
 
 class SearchListing extends Component {
   goToMain = (location) => {

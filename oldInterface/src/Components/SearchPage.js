@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../App.css';
+import './../Style/SearchListing.css';
 import Header from './Header';
 import SearchFunction from './SearchFunction';
 

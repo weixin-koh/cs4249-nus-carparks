@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import history from './history';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './Style/App.css';
 import Main from './Components/Main';
 import SearchPage from './Components/SearchPage';
 

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo, faCar, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Main.css';
+import './../Style/Main.css';
 
 class Header extends React.Component {
     render() {

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSortAmountUp, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Main.css';
+import './../Style/Main.css';
 import SelectedSearchOption from '../Components/SelectedSearchOption';
 
 class SearchOptions extends React.Component {

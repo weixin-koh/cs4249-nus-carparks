@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import CarparkListing from './CarparkListing'
 import {carparkData} from '../Data/Carparks'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Main.css';
+import './../Style/Main.css';
 
 class CarparkListingContainer extends Component {
     constructor(props) {

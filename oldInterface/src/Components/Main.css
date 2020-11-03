@@ -16,6 +16,10 @@
   background: linear-gradient(to bottom, #b2e5fe 0%, #33a9ed 100%);
 }
 
+.white-background {
+  background-color: white;
+}
+
 .fa {
   color: white;
 }
@@ -23,17 +27,22 @@
 .search-option-button {
   background-color: #3e59cb;
   margin: 4px;
+  border-radius: 0;
+  padding: 15px 0px;
+  font-size: 80%;
 }
 
 .selected-search-display {
   color: white;
   background-color: #266cb2;
   padding: 0px 10px;
+  font-size: 130%;
 }
 
 .selected-search-redo {
-  color: #f95b03;
+  color: #f95b03 !important;
   background-color: #266cb2;
+  font-size: x-large;
 }
 
 .selected-search-location {
@@ -43,20 +52,31 @@
   background-color: #dc545d;
 }
 
-.footer-button-light {
-  background-color: #889dea;
+.main-body {
+  min-height: 400px;
+  margin-bottom: 40px;
+  clear: both;
+}
+
+.footer-button {
   color: white;
   font-weight: bold;
+  border-radius: 0;
+}
+
+.footer-button-light {
+  background-color: #889dea;
 }
 
 .footer-button-medium {
   background-color: #6885e9;
-  color: white;
-  font-weight: bold;
 }
 
 .footer-button-dark {
   background-color: #3e59cb;
-  color: white;
-  font-weight: bold;
+}
+
+.navbar {
+  padding: 0px;
+  margin: 0px;
 }

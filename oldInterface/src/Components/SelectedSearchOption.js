@@ -1,7 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedo } from '@fortawesome/free-solid-svg-icons'
-import { Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Main.css';
 
@@ -20,9 +19,9 @@ class SelectedSearchOption extends React.Component {
                 <div>
                     <div className="d-flex justify-content-between selected-search-display">
                         <div className="align-self-center">Most Available Lots</div>
-                        <Link to="/about" className="btn btn-primary selected-search-redo">
+                        <div className="btn btn-primary selected-search-redo">
                             <FontAwesomeIcon icon={faRedo}/>
-                        </Link>
+                        </div>
                     </div>
                 </div>
             )
@@ -31,9 +30,9 @@ class SelectedSearchOption extends React.Component {
             <div>
                 <div className="d-flex justify-content-between selected-search-display">
                     <div className="align-self-center">Nearest Car Parks</div>
-                    <Link to="/about" className="btn btn-primary selected-search-redo">
+                    <div className="btn btn-primary selected-search-redo">
                         <FontAwesomeIcon icon={faRedo}/>
-                    </Link>
+                    </div>
                 </div>
                 <div className="selected-search-location">
                     From {location}

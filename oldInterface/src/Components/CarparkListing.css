@@ -1,0 +1,46 @@
+.id {
+  color: #3600f3;
+  font-size: large;
+  font-weight: bold;
+}
+
+.lot-type {
+  color: #ec272c;
+  font-size: small;
+  font-weight: bold;
+}
+
+.location {
+  color: black;
+  font-size: medium;
+}
+
+.distance {
+  color: #837f83;
+  font-size: medium;
+}
+
+.num-lots-label {
+  color: black;
+  font-size: small;
+  text-align: center;
+}
+
+.num-lots {
+  color: #3b06f8;
+  font-size: 250%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.odd {
+  background-color: #dfdadf;
+  padding: 0px 0px 20px 0px;
+  text-align: left;
+}
+
+.even {
+  background-color: white;
+  padding: 0px 0px 20px 0px;
+  text-align: left;
+}

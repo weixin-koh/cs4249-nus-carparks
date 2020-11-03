@@ -9,7 +9,7 @@ import './Main.css';
 class Header extends React.Component {
     render() {
         return (
-            <div>
+            <div className="position-relative">
             {
                 this.props.navBack !== undefined && this.props.navBack ? 
                 <div className="d-flex justify-content-between" style={{ backgroundColor: "#F95B03" }}>

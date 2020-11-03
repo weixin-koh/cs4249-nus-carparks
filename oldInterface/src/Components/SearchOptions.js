@@ -13,7 +13,8 @@ class SearchOptions extends React.Component {
                     <div className="btn btn-primary fa search-option-button flex-fill"
                         // Default "Nearest" to COM1
                         onClick={() => {
-                            this.props.startNewSearch("com1");
+                            this.props.startNewSearch("com1")
+                            this.props.resetLocation();
                         }}>
                         <FontAwesomeIcon icon={faSortAmountUp} /> NEAREST
                     </div>

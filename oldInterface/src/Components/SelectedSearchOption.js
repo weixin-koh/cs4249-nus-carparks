@@ -16,6 +16,7 @@ class SelectedSearchOption extends React.Component {
     componentDidUpdate(prevProps, prevState) {
         if (prevProps.criteria !== this.props.criteria) {
             this.setState({ isNearest: (this.props.criteria !== 'lots') });
+            this.setState({ location: this.props.criteria });
         }
     }
 

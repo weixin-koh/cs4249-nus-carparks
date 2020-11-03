@@ -8,7 +8,6 @@ class CarparkListingContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            criteria: "com1", // will sort nearest to COM1 by default
             sortedData: carparkData
         };
 
@@ -53,7 +52,11 @@ class CarparkListingContainer extends Component {
                         location={carpark.location}
                         lotType={carpark.lotType}
                         availLots={carpark.availLots}
-                        distance={carpark.distFromCOM1}
+                        distance={
+                            (this.props.criteria === "fass") ? carpark.distFromFASS
+                            : (this.props.criteria === "utown") ? carpark.distFromUTOWN
+                            : carpark.distFromCOM1 // will sort nearest to COM1 by default
+                            }
                     />);
                 })}
             </div>

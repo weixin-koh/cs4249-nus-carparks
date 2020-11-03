@@ -31,7 +31,7 @@ class SearchFunction extends Component {
             <input className="form-control py-2 border-left-0 border" type="search" id="example-search-input" value={this.state.searchTerm} onChange={this.editSearchTerm} placeholder='Search' />
           </div>
         </div>
-        <SearchContainer labels = {this.dynamicSearch()}/>
+        <SearchContainer labels={this.dynamicSearch()}/>
       </div>
     );
   }

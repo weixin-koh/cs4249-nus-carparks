@@ -8,8 +8,8 @@ class SearchPage extends React.Component {
   render () {
     return (
       <div className="App">
-        <Header navBack={true} />
-        <SearchFunction />
+        <Header navBack={true} props={this.props} />
+        <SearchFunction props={this.props} />
       </div>
     );
   }

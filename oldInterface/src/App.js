@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import history from './history';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './Components/Header';
@@ -16,19 +17,14 @@ import SearchPage from './Components/SearchPage';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router history={history}>
         <Switch>
-        <Route path="/1">
-          <Main />
-        </Route>
-
-        <Route path="/search">
-          <SearchPage />
-        </Route>
-        {/* <Route path="/2">
-          <NewMain />
-        </Route> */}
-      </Switch>
+          <Route path="/1" component={Main} />
+          <Route path="/search" component={SearchPage} />
+          {/* <Route path="/2">
+            <NewMain />
+          </Route> */}
+        </Switch>
       </Router>
     </div>
   );

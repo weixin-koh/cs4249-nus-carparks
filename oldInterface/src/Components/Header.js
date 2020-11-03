@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import history from './../history';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo, faCar, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom"
@@ -14,7 +15,7 @@ class Header extends React.Component {
                 <div className="d-flex justify-content-between" style={{ backgroundColor: "#F95B03" }}>
                     <div className="header d-flex flex-row-reverse width-100 p-1" style={{ zIndex: 5 }}>
                         <Link to="/1" className="btn btn-primary fa ml-2 mr-2 header-button">
-                            <FontAwesomeIcon icon={faArrowLeft}/>
+                            <FontAwesomeIcon icon={faArrowLeft} />
                         </Link>
                     </div>
                     <div className="header-app-name position-absolute">

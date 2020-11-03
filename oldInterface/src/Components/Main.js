@@ -11,7 +11,7 @@ import SearchContainer from './SearchContainer';
 class Main extends React.Component {
   constructor(props) {
     super(props);
-    this.updateListingRef = React.createRef();
+
     this.state = {
       criteria: "",
       showSearchPage: false
@@ -21,6 +21,10 @@ class Main extends React.Component {
   toggleSearchDisplay = () => {
     const showSearchPage = this.state.showSearchPage;
     this.setState({ showSearchPage: !showSearchPage });
+  }
+
+  resetLocation = () => {
+    this.setState({ criteria: "" });
   }
 
   // Update search criteria
@@ -44,7 +48,11 @@ class Main extends React.Component {
           <div>
             <div className="sticky-top white-background">
               <Header />
-              <SearchOptions startNewSearch={this.startNewSearch} toggleSearchDisplay={this.toggleSearchDisplay} criteria={this.state.criteria} />
+              <SearchOptions 
+                startNewSearch={this.startNewSearch} 
+                toggleSearchDisplay={this.toggleSearchDisplay} 
+                resetLocation={this.resetLocation}
+                criteria={this.state.criteria} />
             </div>
             <CarparkListingContainer criteria={this.state.criteria.toLowerCase()} />
             <Footer />

@@ -59,7 +59,7 @@
 }
 
 .footer-button {
-  color: white;
+  color: white !important;
   font-weight: bold;
   border-radius: 0;
 }

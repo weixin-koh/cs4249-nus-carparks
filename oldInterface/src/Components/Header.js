@@ -19,14 +19,14 @@ class Header extends React.Component {
                             </div>
                             <div className="header-app-name position-absolute">NUS Carparks</div>
                             <div className="header d-flex flex-row-reverse width-100 p-1">
-                                <div>
-                                    <Link to="/NUSSite/nusMain.html" className="btn btn-primary fa ml-2 mr-2 header-button" style={{ zIndex: 5 }}>
+                                <div style={{ zIndex: 5 }}>
+                                    <Link to="/NUSSite/nusMain.html" className="btn btn-primary fa ml-2 mr-2 header-button">
                                         <FontAwesomeIcon icon={faInfo} />
                                     </Link>
 
-                                    <Link to="/about" className="btn btn-primary fa ml-2 mr-2 header-button" style={{ zIndex: 5 }}>
+                                    <div className="btn btn-primary fa ml-2 mr-2 header-button">
                                         <FontAwesomeIcon icon={faCar} />
-                                    </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -34,14 +34,14 @@ class Header extends React.Component {
                         <div className="position-relative">
                             <div className="header-app-name ml-auto position-absolute">NUS Carparks</div>
                             <div className="header d-flex flex-row-reverse width-100 p-1">
-                                <div>
+                                <div style={{ zIndex: 5 }}>
                                     <Link to="/NUSSite/nusMain.html" className="btn btn-primary fa ml-2 mr-2 header-button">
                                         <FontAwesomeIcon icon={faInfo} />
                                     </Link>
 
-                                    <Link to="/about" className="btn btn-primary fa ml-2 mr-2 header-button">
+                                    <div className="btn btn-primary fa ml-2 mr-2 header-button">
                                         <FontAwesomeIcon icon={faCar} />
-                                    </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

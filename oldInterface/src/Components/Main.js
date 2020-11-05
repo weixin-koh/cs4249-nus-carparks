@@ -48,9 +48,9 @@ class Main extends React.Component {
           <div>
             <div className="sticky-top white-background">
               <Header />
-              <SearchOptions 
-                startNewSearch={this.startNewSearch} 
-                toggleSearchDisplay={this.toggleSearchDisplay} 
+              <SearchOptions
+                startNewSearch={this.startNewSearch}
+                toggleSearchDisplay={this.toggleSearchDisplay}
                 resetLocation={this.resetLocation}
                 criteria={this.state.criteria} />
             </div>

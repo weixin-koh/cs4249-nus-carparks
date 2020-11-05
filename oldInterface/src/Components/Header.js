@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo, faCar, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-import { Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../Style/Main.css';
 
@@ -20,9 +19,9 @@ class Header extends React.Component {
                             <div className="header-app-name position-absolute">NUS Carparks</div>
                             <div className="header d-flex flex-row-reverse width-100 p-1">
                                 <div style={{ zIndex: 5 }}>
-                                    <Link to="/NUSSite/nusMain.html" className="btn btn-primary fa ml-2 mr-2 header-button">
+                                    <div className="btn btn-primary fa ml-2 mr-2 header-button" onClick={() => { window.location.href = "https://nus-parking-info.netlify.app/"; return false; }}>
                                         <FontAwesomeIcon icon={faInfo} />
-                                    </Link>
+                                    </div>
 
                                     <div className="btn btn-primary fa ml-2 mr-2 header-button">
                                         <FontAwesomeIcon icon={faCar} />
@@ -35,9 +34,9 @@ class Header extends React.Component {
                             <div className="header-app-name ml-auto position-absolute">NUS Carparks</div>
                             <div className="header d-flex flex-row-reverse width-100 p-1">
                                 <div style={{ zIndex: 5 }}>
-                                    <Link to="/NUSSite/nusMain.html" className="btn btn-primary fa ml-2 mr-2 header-button">
+                                    <div className="btn btn-primary fa ml-2 mr-2 header-button" onClick={() => { window.location.href = "https://nus-parking-info.netlify.app/"; return false; }}>
                                         <FontAwesomeIcon icon={faInfo} />
-                                    </Link>
+                                    </div>
 
                                     <div className="btn btn-primary fa ml-2 mr-2 header-button">
                                         <FontAwesomeIcon icon={faCar} />

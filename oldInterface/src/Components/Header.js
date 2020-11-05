@@ -19,7 +19,12 @@ class Header extends React.Component {
                             <div className="header-app-name position-absolute">NUS Carparks</div>
                             <div className="header d-flex flex-row-reverse width-100 p-1">
                                 <div style={{ zIndex: 5 }}>
-                                    <div className="btn btn-primary fa ml-2 mr-2 header-button" onClick={() => { window.location.href = "https://nus-parking-info.netlify.app/"; return false; }}>
+                                    <div className="btn btn-primary fa ml-2 mr-2 header-button" onClick={() => {
+                                        window.open(
+                                            'https://nus-parking-info.netlify.app/',
+                                            '_blank'
+                                        );
+                                    }}>
                                         <FontAwesomeIcon icon={faInfo} />
                                     </div>
 
@@ -34,7 +39,12 @@ class Header extends React.Component {
                             <div className="header-app-name ml-auto position-absolute">NUS Carparks</div>
                             <div className="header d-flex flex-row-reverse width-100 p-1">
                                 <div style={{ zIndex: 5 }}>
-                                    <div className="btn btn-primary fa ml-2 mr-2 header-button" onClick={() => { window.location.href = "https://nus-parking-info.netlify.app/"; return false; }}>
+                                    <div className="btn btn-primary fa ml-2 mr-2 header-button" onClick={() => {
+                                        window.open(
+                                            'https://nus-parking-info.netlify.app/',
+                                            '_blank'
+                                        );
+                                    }}>
                                         <FontAwesomeIcon icon={faInfo} />
                                     </div>
 
